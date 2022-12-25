@@ -1,0 +1,110 @@
+proxies:
+- name: danuWS09a
+  type: trojan
+  server: crl.identrust.com
+  port: 443
+  password: cbb998e8-99db-4508-b052-24f347e53630
+  udp: true
+  sni: id-qword5.sshpremium.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojanws"
+    headers:
+      Host: id-qword5.sshpremium.my.id
+- name: danuWs09b
+  type: trojan
+  server: 172.67.199.34
+  port: 443
+  password: cbb998e8-99db-4508-b052-24f347e53630
+  udp: true
+  sni: id-qword5.sshpremium.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojanws"
+    headers:
+      Host: id-qword5.sshpremium.my.id
+- name: danuWsGo01
+  type: trojan
+  server: 172.67.199.34
+  port: 443
+  password: 128c21ef-d2cf-4a15-a3bb-c90f22448ef9
+  udp: true
+  sni: sg-ctn.sshpremium.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojanws"
+    headers:
+      Host: sg-ctn.sshpremium.my.id
+- name: danuWs06
+  type: trojan
+  server: 172.67.199.34
+  port: 443
+  password: 44912509-364c-4b1a-91bf-ad449e03f561
+  udp: true
+  sni: sg-ctn.sshpremium.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojanws"
+    headers:
+      Host: sg-ctn.sshpremium.my.id
+- name: danGrpc04
+  type: trojan
+  server: wsindo.aryossh.my.id
+  port: 443
+  password: 2d0c0e9e-1bc7-473c-8943-3408cfb0f8cb
+  udp: true
+  sni: sg-cth.sshpremium.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+- name: danuGrpc05
+  type: trojan
+  server: wsindo.aryossh.my.id
+  port: 443
+  password: c1b0678d-6439-4893-a186-456e338c6fae
+  udp: true
+  sni: sg-do2.sshpremium.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+- name: danugayeng01a
+  type: trojan
+  server: 172.67.199.34
+  port: 443
+  password: aba099a6-3f2b-48ce-ac00-b53f0e103c9b
+  udp: true
+  sni: do-gayeng.potatonc.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: do-gayeng.potatonc.my.id
+- name: danu04
+  type: trojan
+  server: sg-cth.sshpremium.my.id
+  port: 443
+  password: 2d0c0e9e-1bc7-473c-8943-3408cfb0f8cb
+  udp: true
+  sni: teams.live.com
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+- name: danu05
+  type: trojan
+  server: sg-do2.sshpremium.my.id
+  port: 443
+  password: c1b0678d-6439-4893-a186-456e338c6fae
+  udp: true
+  sni: teams.live.com
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
