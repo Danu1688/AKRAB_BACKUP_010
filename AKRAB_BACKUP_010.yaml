@@ -1,20 +1,7 @@
 proxies:
-- name: danuWS10a
+- name: danuWs10
   type: trojan
-  server: 104.20.74.141
-  port: 443
-  password: cbb998e8-99db-4508-b052-24f347e53630
-  udp: true
-  sni: id-qword5.sshpremium.my.id
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: "/trojanws"
-    headers:
-      Host: id-qword5.sshpremium.my.id
-- name: danuWs10b
-  type: trojan
-  server: 104.20.75.141
+  server: 172.67.199.34
   port: 443
   password: cbb998e8-99db-4508-b052-24f347e53630
   udp: true
